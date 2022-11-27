@@ -252,8 +252,8 @@ export const MapContact = () => {
           <MapContactCard
             ProjectName="Xr-H"
             Developer="© Jude Ricketts"
-            Course="Futuring the city's past"
-            City="Greater Brighton Areas"
+            SubTitle="Futuring the city's past"
+            City="Greater Brighton"
             ProjectYear="2023"
             Socials="@xxx"
           />
