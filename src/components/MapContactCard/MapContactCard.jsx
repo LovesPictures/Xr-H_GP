@@ -15,6 +15,7 @@ export const MapContactCard = (props) => {
 
         <h2 className="Card__text-projectName">{props.ProjectName}</h2>
         <p className="Card__text-city">{props.City}</p>
+        <p className="Card__text-city">{props.SubTitle}</p>
         <p className="Card__text-projectYear">{props.ProjectYear}</p>
         <p className="Card__text-Socials">{props.Socials}</p>
 
