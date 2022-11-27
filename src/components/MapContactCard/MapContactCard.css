@@ -1,0 +1,91 @@
+   .Card__QR > img{
+    display: relative;
+    margin-top: 30px;
+    height: 130px;
+    filter:invert(100);
+  }  
+
+  .Card__logo{
+    display: relative;
+    text-align: center;
+  }
+
+
+  .Card__logo > img{
+    display: relative;
+    margin-top: 15%;
+    height: 130px;
+  }
+  
+  .cardQ{
+    height:100vh;
+  }
+
+  .cardP {
+    background-color:  #5d757e;
+    height: 100vh;
+    /* height: calc(100% - 50%); */
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  /* DEFAULT text container   */
+  .Card__text-container-c {
+    color: white;
+    text-align: center;
+    position: relative;    
+  }
+  
+  .Card__text-projectName {
+    display: relative;
+    font: 1.8rem var(--font-family-1);
+    margin-top: 70px;
+  }
+  
+  .Card__text-city {
+    font: 1.2rem var(--font-family-1);
+    margin-top: 12px;
+    display: block;
+  }
+
+  .Card__text-projectYear {
+    font: 1.2rem var(--font-family-1);
+    margin-top: 15px;
+    position: relative;
+    display: block;
+  }
+  
+  .Card__text-Socials {
+    font: 1.2rem var(--font-family-1);
+    position: relative;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .Card__text-developer {
+    font: var(--font-family-1);
+    font-size: var(--font-size-4);
+    position: relative;
+    margin-top: 160px;
+    display: block;
+  }
+
+  .MarkerText {
+    font:var(--font-family-1);
+    font-size: var(--font-size-3);
+    color: var(--font-color-2);
+  }
+
+  /* Mapbox branding */
+
+  a.mapboxgl-ctrl-logo {
+    width: 0px;
+  }
+    
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    width: 0px;
+    height:0px;
+}
+ 
