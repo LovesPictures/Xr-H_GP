@@ -5,3 +5,11 @@
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 
 }
+
+#marker {
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
