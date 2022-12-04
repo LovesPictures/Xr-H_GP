@@ -1,7 +1,7 @@
 import * as React from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
 // import Map, { Marker } from "react-map-gl";
-import Map, { Marker, Popup } from "react-map-gl";
+import Map, { Marker, GeolocateControl } from "react-map-gl";
 import { NavigationControl } from "react-map-gl";
 
 import { MapContactCard } from "../MapContactCard/MapContactCard";
@@ -14,9 +14,6 @@ const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoianVkaXRocmlja2V0dHMiLCJhIjoiY2w1djA4Y2FuMDR6OTNibnAzbm1oeWN4dCJ9.bwVGnCWwW0QgGJp1KAoN2Q";
 
 export const MapContact = () => {
-  // popup
-  const [showPopup, setShowPopup] = React.useState(true);
-
   return (
     <div className="Grid__container-b">
       <div className="Card__text-container-c">
@@ -33,16 +30,10 @@ export const MapContact = () => {
             style={{ width: "100%", height: "100%" }}
             mapStyle="mapbox://styles/mapbox/navigation-night-v1"
           >
-            {showPopup && (
-              <Popup
-                longitude={-100}
-                latitude={40}
-                anchor="bottom"
-                onClose={() => setShowPopup(false)}
-              >
-                You are here
-              </Popup>
-            )}
+            <GeolocateControl
+              positionOptions={{ enableHighAccuracy: true }}
+              trackUserLocation={true}
+            />
             {/* ------------------- Landmarks markers ---------------------*/}
             <Marker latitude={50.8342} longitude={-0.2716} anchor="bottom">
               <img

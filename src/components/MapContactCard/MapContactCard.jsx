@@ -24,8 +24,6 @@ export const MapContactCard = (props) => {
         </div>
         <p className="Card__text-developer">{props.Developer}</p>
       </div>
-
-      {/* <p className="Card__start-button">{props.Developer}</p> */}
     </div>
   );
 };
