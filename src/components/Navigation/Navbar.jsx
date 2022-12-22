@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import HomeIcon from "@material-ui/icons/Home";
+import HomeIcon from "@material-ui/icons/Person";
+
 import PersonIcon from "@material-ui/icons/Person";
 // import FaceIcon from "@material-ui/icons/Face";
 import MapIcon from "@material-ui/icons/Map";
