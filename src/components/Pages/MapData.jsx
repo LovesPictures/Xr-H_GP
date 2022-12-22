@@ -1,13 +1,11 @@
 import * as React from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
-// import Map, { Marker } from "react-map-gl";
 import Map, { Marker, GeolocateControl } from "react-map-gl";
 import { NavigationControl } from "react-map-gl";
 
-import { MapContactCard } from "../MapContactCard/MapContactCard";
 import GoringHall_01 from "../img/GoringHall_01.png";
 // import markerOrange from "../img/markerOrange.png";
-import "./MapContact.css";
+import "./MapData.css";
 
 // directions
 // import MapboxDirections = require("@mapbox/mapbox-gl-directions");
@@ -16,7 +14,7 @@ import "./MapContact.css";
 const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoianVkaXRocmlja2V0dHMiLCJhIjoiY2w1djA4Y2FuMDR6OTNibnAzbm1oeWN4dCJ9.bwVGnCWwW0QgGJp1KAoN2Q";
 
-export const MapContact = () => {
+export const MapData = () => {
   return (
     <div className="Grid__container-b">
       <div className="Card__text-container-c">
@@ -25,7 +23,7 @@ export const MapContact = () => {
             initialViewState={{
               longitude: -0.16038,
               latitude: 50.898625,
-              zoom: 10,
+              zoom: 9,
               pitch: 45,
               bearing: -10, // bearing in degrees
             }}
@@ -471,20 +469,6 @@ export const MapContact = () => {
             {/* --------------------------------------------------------------------------------------- */}
             <NavigationControl />
           </Map>
-        </div>
-      </div>
-
-      {/* Address */}
-      <div>
-        <div className="cardP">
-          <MapContactCard
-            ProjectName="Xr-H"
-            Developer="© Jude Ricketts"
-            SubTitle="Futuring the city's past"
-            City="Greater Brighton"
-            ProjectYear="2023"
-            Socials="@xxx"
-          />
         </div>
       </div>
     </div>

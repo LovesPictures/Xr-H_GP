@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "../img/JohnHawkynsCrest_02.png";
 
 import QR from "../img/QR.png";
-// import "./MapContactCard.css";
 
 export const MapContactCard = (props) => {
   return (
@@ -22,6 +21,7 @@ export const MapContactCard = (props) => {
         <div className="Card__QR">
           <img src={QR} alt="#" />
         </div>
+
         <p className="Card__text-developer">{props.Developer}</p>
       </div>
     </div>
