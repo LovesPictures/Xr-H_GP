@@ -11,16 +11,22 @@ import BubbleChartIcon from "@material-ui/icons/BubbleChart";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 // import MenuIcon from '@material-ui/icons/icons-material/Menu';
 
+// import icons form icons
+// import Icons from "../img/Icons";
+
 import "./Navbar.css";
+// import { Icon } from "@material-ui/core";
 
 const Navbar = () => {
   return (
     <nav className="Primary__navbar">
       <ul>
         <li className="Primary__navbar-link">
+          {/* <img className="Home__Icon" src={Icons.iconHome} alt="Home" /> */}
           <Link to="/">
             <HomeIcon alt="Home" />
           </Link>
+
           <Link to="/about">
             <PersonIcon alt="About" />
           </Link>
