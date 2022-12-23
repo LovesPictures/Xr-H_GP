@@ -17,12 +17,12 @@
 
 .Card__logo > img {
   display: relative;
-  margin-top: 15%;
+  margin-top: 130px;
   height: 130px;
 }
 
 .cardP {
-  background-color: #5d757e;
+  background-color: #f509ae ;
   height: 100vh;
   /* height: calc(100% - 50%); */
   color: white;
@@ -77,13 +77,3 @@
   color: var(--font-color-2);
 }
 
-/* Mapbox branding */
-
-a.mapboxgl-ctrl-logo {
-  width: 0px;
-}
-
-.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
-  width: 0px;
-  height: 0px;
-}
