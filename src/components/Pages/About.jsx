@@ -1,28 +1,21 @@
 import React from "react";
-// import { Typography } from "@material-ui/core";
+import Accordion from "./Accordion";
+import { AccordionData } from "./AccordionData";
 import "./About.css";
 
-export const About = (props) => {
+export const About = () => {
   return (
-    <section className="Page__section">
-      <h2 className="Page-header">About</h2>
-    </section>
-
-    // <div>
-    //   <Typography variant="h3">About Page</Typography>
-    //   <Typography variant="body2">
-    //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique
-    //     lacus tortor, sit amet viverra ligula elementum vel. Suspendisse eu ante
-    //     mauris. Maecenas et blandit ex. Suspendisse feugiat nisi lorem, vel
-    //     finibus mauris gravida et. Nulla viverra sit amet libero vitae rhoncus.
-    //     Donec ornare fermentum velit. Ut eget vehicula nibh. Duis ex arcu,
-    //     ullamcorper vitae leo eget, tristique egestas nulla. Fusce gravida sem
-    //     eget ipsum sollicitudin, at euismod augue placerat. Integer interdum
-    //     lectus vel nisi porttitor, vitae egestas lorem luctus. Vivamus ac est
-    //     ultricies, ullamcorper nunc a, vehicula lectus. Donec efficitur aliquam
-    //     viverra. Integer accumsan placerat metus, vel cursus libero tristique
-    //     vel.
-    //   </Typography>
-    // </div>
+    <main>
+      <header className="main__header">
+        <h1>FAQs</h1>
+      </header>
+      <div className="accordion">
+        {AccordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content} />
+        ))}
+      </div>
+    </main>
   );
 };
+
+// export default About;

@@ -1,0 +1,98 @@
+/*
+rename 00000
+
+accordion 
+accordion-item
+      <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+        <div>{title}</div>
+        <div>{isActive ? "-" : "+"}</div>
+      </div>
+      {isActive && <div className="accordion-content"
+        
+
+        Semantic code 
+<article className="question">
+      <header>
+        <h4>{title}</h4>
+        <button className="btn" onClick={() => setShowInfo(!showInfo)}>
+          {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
+        </button>
+      </header>
+      {showInfo && <p>{info}</p>}
+    </article>
+
+      return (
+    <main>
+      <div className="container">
+        <h3>questions and answers about login</h3>
+        <section className="info">
+          {questions.map((question) => {
+            return <Question key={question.id} {...question} />;
+          })}
+        </section>
+      </div>
+    </main>
+
+        */
+/* .accordion__section{
+ background-color: #21aeca;
+} */
+ body {
+ background-color: var(--background-4);
+}
+
+.main__header{
+    /* font-size: var(--font-size-2);
+    margin: 5rem auto; */
+
+     
+      font-size: var(--font-size-1);
+      position: relative;
+      margin: 5rem 5rem 5rem auto ;
+      /* top: 10rem auto; */
+      color: var( --font-semiTransparent);
+    
+}
+
+.accordion {    
+  max-width: 500px;
+  margin: 5rem auto;
+  box-shadow: var(--box-shadow-2);
+  border: 1px solid var(--background-3);
+  box-shadow: var(--box-shadow-1);
+}
+
+.accordion__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: crosshair;
+  background-color: var(--background-4);
+  font-size: 20px;
+  font-weight: var(--font-weight-3);
+}
+
+.accordion__title:hover {
+  background-color: var(--background-3);
+  color:var(----font-color-1);
+}
+
+.accordion__title,
+.accordion__content {
+  padding: 1.5rem;
+  color: var(--font-color-2);
+}
+
+.accordion__content {
+  background-color: var(--background-6);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .accordion {
+    width: 90%;
+  }
+}

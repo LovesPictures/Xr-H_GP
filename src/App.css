@@ -13,9 +13,11 @@
   --background-1: #ffff;
   --background-2: #f8f8f8;
   --background-3: #e8e517cc;
-  --background-4: #000;
+  --background-4: #424d5c;
+  --background-5: #5d757e;
+  --background-6: #39b9d2; 
 
-  --accent-1: #e8e316cc;
+  --accent-1: #adab10cc;
   --accent-2: #68656899;
   --accent-3: #00ff00;
   --accent-4: #545455;
@@ -24,9 +26,8 @@
 
   /* font */
   --font-family-1: "Share Tech Mono", monospace;
-  /* --font-family-2: "DM Sans", sans-serif; */
 
-  --font-size-1: 3.44rem; /*55px*/
+  --font-size-1: 8rem; /*55px*/
   --font-size-2: 2.13rem; /*34px*/
   --font-size-3: 1.37rem; /*22px*/
   --font-size-4: 1rem; /* 16 px = 1 rem */
@@ -36,14 +37,15 @@
   --font-weight-2: 600;
   --font-weight-3: 400;
 
-  --font-color-1: #545455;
+  --font-color-1:  #424d5c;
   --font-color-2: #ffff;
   --font-color-3: #000;
   --font-color-4: #8e8e8f;
   --font-color-5: #ffa500;
+  --font-semiTransparent: #ffffff80;
 
   /* styling */
-  --box-shadow-1: 1px 1px 1px 1px #88848433;
+  --box-shadow-1: 6px 6px 6px 0px var(--accent-1);
   --box-shadow-2: 0 12px 12px var(var(--accent-3));
   --box-shadow-3: 0 0 6px #fb00ff99;
 
@@ -59,8 +61,7 @@
 }
 
 body {
-  /* background: var(--background-3); */
-  /* color: var(--font-color-1); */
+ font-family: var(--font-family-1 );
 }
 
 html {
