@@ -3,13 +3,12 @@ import Logo from "../img/JohnHawkynsCrest_02.png";
 
 import QR from "../img/QR.png";
 
-export const MapContactCard = (props) => {
+export const LandingPageCard = (props) => {
   return (
     <div>
-      <div className="Map"> {props.Map}</div>
       <div className="Card__text-container">
         <div className="Card__logo">
-          <img src={Logo} alt="#" />
+          <img src={Logo} alt="John Hawkyns Crest" />
         </div>
 
         <h2 className="Card__text-projectName">{props.ProjectName}</h2>
@@ -19,7 +18,7 @@ export const MapContactCard = (props) => {
         <p className="Card__text-Socials">{props.Socials}</p>
 
         <div className="Card__QR">
-          <img src={QR} alt="#" />
+          <img src={QR} alt="Project qr code" />
         </div>
 
         <p className="Card__text-developer">{props.Developer}</p>

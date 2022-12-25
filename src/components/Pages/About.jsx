@@ -5,9 +5,9 @@ import "./About.css";
 
 export const About = () => {
   return (
-    <main>
+    <main className="about__body">
       <header className="main__header">
-        <h2>FAQs</h2>
+        <h2>About</h2>
       </header>
       <div className="accordion">
         {AccordionData.map(({ title, content }) => (

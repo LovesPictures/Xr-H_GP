@@ -1,63 +1,28 @@
-/*
-rename 00000
 
-accordion 
-accordion-item
-      <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-        <div>{title}</div>
-        <div>{isActive ? "-" : "+"}</div>
-      </div>
-      {isActive && <div className="accordion-content"
-        
-
-        Semantic code 
-<article className="question">
-      <header>
-        <h4>{title}</h4>
-        <button className="btn" onClick={() => setShowInfo(!showInfo)}>
-          {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
-        </button>
-      </header>
-      {showInfo && <p>{info}</p>}
-    </article>
-
-      return (
-    <main>
-      <div className="container">
-        <h3>questions and answers about login</h3>
-        <section className="info">
-          {questions.map((question) => {
-            return <Question key={question.id} {...question} />;
-          })}
-        </section>
-      </div>
-    </main>
-
-        */
-/* .accordion__section{
- background-color: #21aeca;
-} */
-body {
+.about__body {
   background-color: var(--background-4);
+  height: 100vh;
+  /* position: relative; */
 }
 
 .main__header {
-  /* font-size: var(--font-size-2);
-    margin: 5rem auto; */
-
-  font-size: var(--font-size-2);
-  position: relative;
-  margin: 6rem 1rem auto;
-  /* top: 10rem auto; */
+  font-size: var(--font-size-1);
   color: var(--font-semiTransparent);
+  position: relative;
+  margin: 10rem auto;
+  /* top: 10rem auto; */
+   text-align: center;
+  
 }
 
 .accordion {
-  max-width: 500rem;
-  margin: 5rem 1rem auto;
+   position: relative;
+  max-width: 450rem;
+  margin: 5rem 3rem ;
   box-shadow: var(--box-shadow-2);
   border: 1px solid var(--background-3);
   box-shadow: var(--box-shadow-1);
+ 
 }
 
 .accordion__title {
@@ -83,7 +48,7 @@ body {
   color: var(--font-color-2);
 }
 
-.accordion__content {
+/* .accordion__content {
   background-color: var(--background-6);
   font-size: 18px;
 }
@@ -95,4 +60,4 @@ body {
   .accordion {
     width: 90%;
   }
-}
+} */

@@ -1,4 +1,11 @@
 
+.cardP {
+  background-color: var(--background-2);
+  height: 100vh;
+  color: var(--font-color-2);
+  text-align: center;
+}
+
 .Card__logo {
   display: relative;
   text-align: center;
@@ -7,56 +14,43 @@
 .Card__logo > img {
   display: relative;
   margin-top: 3rem;
-  height: 130px;
+  height: 120px;
 }
 
-.cardP {
-  background-color: #f509ae ;
-  height: 100vh;
-  /* height: calc(100% - 50%); */
-  color: white;
-  text-align: center;
-  font-weight: 700;
-}
-
-/* DEFAULT text container   */
-/* .Card__text-container-c {
-  color: white;
-  text-align: center;
-  position: relative;
-} */
-
-.Card__text-projectName {
+.Card__text-projectName {  
+  font-size: var(--font-size-1);
+  color: var(--font-semiTransparent);
+  font-weight: var(--font-weight-1);
   display: relative;
-  font: 1.8rem var(--font-family-1);
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 .Card__text-city {
-  font: 1.2rem var(--font-family-1);
-  margin-top: 12px;
+  margin-top: 1rem;
+  font-size: var(--font-size-3);
   display: block;
 }
 
 .Card__text-projectYear {
-  font: 1.2rem var(--font-family-1);
-  margin-top: 15px;
+  font-size: var(--font-size-3);
+  color: var(--font-semiTransparent);
+  margin: 1.5rem;
   position: relative;
   display: block;
 }
 
-.Card__text-Socials {
+/* .Card__text-Socials {
   font: 1.2rem var(--font-family-1);
   position: relative;
   display: block;
   margin-top: 20px;
-}
+} */
 
 .Card__text-developer {
   font: var(--font-family-1);
   font-size: var(--font-size-4);
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: block;
 }
 
@@ -67,7 +61,7 @@
 
 .Card__QR > img {
   display: relative;
-  margin-top: 3rem;
-  height: 10rem;
+  margin-top: 1rem;
+  height: 8rem;
   filter: invert(100);
 }
