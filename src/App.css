@@ -13,11 +13,11 @@
   --background-1: #ffff;
   --background-2: #f8f8f8;
   --background-3: #e8e517cc;
-  --background-4: #424d5c;
+  --background-4:  #424d5c;
   --background-5: #5d757e;
-  --background-6: #39b9d2; 
+  --background-6: url(./components/img/grid.png);
 
-  --accent-1: #adab10cc;
+  --accent-1: #8d8b0dcc;
   --accent-2: #68656899;
   --accent-3: #00ff00;
   --accent-4: #545455;
@@ -27,9 +27,10 @@
   /* font */
   --font-family-1: "Share Tech Mono", monospace;
 
+  /* scale these form mobile to desktop */
   --font-size-1: 8rem; /*55px*/
   --font-size-2: 2.13rem; /*34px*/
-  --font-size-3: 1.37rem; /*22px*/
+  --font-size-3: 1.25rem; /*22px*/
   --font-size-4: 1rem; /* 16 px = 1 rem */
   --font-size-5: 0.8rem; /*12px*/
 

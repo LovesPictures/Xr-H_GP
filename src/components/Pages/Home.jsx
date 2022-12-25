@@ -9,7 +9,7 @@ export const Home = () => {
     <div className="Grid__container-b">
       <div className="cardP">
         <MapContactCard
-          ProjectName="Xr-H"
+          ProjectName=<h1>Xr-H</h1>
           Developer="© Jude Ricketts"
           SubTitle="Futuring the city's past"
           City="Greater Brighton"

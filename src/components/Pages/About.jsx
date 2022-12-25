@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <main>
       <header className="main__header">
-        <h1>FAQs</h1>
+        <h2>FAQs</h2>
       </header>
       <div className="accordion">
         {AccordionData.map(({ title, content }) => (

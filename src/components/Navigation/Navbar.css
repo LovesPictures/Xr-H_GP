@@ -1,17 +1,15 @@
-.Page__section {
-  color: none;
-}
 
-.Primary__navbar {
+/* .Primary__navbar { 
   padding: 0px;
   text-align: center;
-}
+} */
 
 .Primary__navbar-link {
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
+  background: var(--background-6);
 }
 
 .Primary__navbar-link a {
@@ -26,17 +24,20 @@
   /* width: 16.6%; */
   /* for 5 icons */
   width: 20%;
+  transition: all 0.8s;
+    /* transition: 0.8s; */
 }
 
 .Primary__navbar-link a:hover {
   background-color: var(--background-3);
   color: var(--background-1);
-  /* border-radius: 20%; */
+  /* transition: 0.8s; */
 }
 
 .Primary__navbar-link a.active {
-  background-color: #04aa6d;
-  color: var(--background-1);
+  /* background-color: #04aa6d; */
+  bottom: 1rem solid pink;
+  background: var(--background-1);
 }
 
 .Primary__navbar-link .icon {
