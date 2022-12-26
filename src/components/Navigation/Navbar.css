@@ -23,9 +23,10 @@
   /* for 6 icons */
   /* width: 16.6%; */
   /* for 5 icons */
-  width: 20%;
+  /* width: 20%; */
+   /* for 4 icons */
+  width: 25%;
   transition: all 0.8s;
-    /* transition: 0.8s; */
 }
 
 .Primary__navbar-link a:hover {

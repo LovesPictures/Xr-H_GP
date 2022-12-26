@@ -31,9 +31,9 @@ const Navbar = () => {
             <MapIcon alt="Map data" />
           </Link>
 
-          <Link to="/posters">
+          {/* <Link to="/posters">
             <BubbleChartIcon alt="Digital Posters" />
-          </Link>
+          </Link> */}
 
           {/* <Link to="/Gallery">
             <CollectionsBookmark alt="Collections" />
