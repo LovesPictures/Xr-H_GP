@@ -8,7 +8,7 @@ export const HomePageCard = (props) => {
     <div>
       <div className="Card__text-container">
         <div className="Card__logo">
-          <img src={Logo} alt="John Hawkyns Crest" />
+          <img src={Logo} alt="John Hawkins (Hawkyns) Crest" />
         </div>
 
         <h2 className="Card__text-projectName">{props.ProjectName}</h2>
