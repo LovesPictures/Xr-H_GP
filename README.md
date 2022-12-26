@@ -1,4 +1,4 @@
-# install 
+## overview
 
 react-map-gl -   https://www.npmjs.com/package/react-map-gl#
 Mapbox general docs https://docs.mapbox.com/mapbox-gl-js/api/map/ 
@@ -10,69 +10,30 @@ Master to main https://stevenmortimer.com/5-steps-to-change-github-default-branc
 --------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Mobile first 
 
-In the project directory, you can run:
+![Alt text](/src/components/img/LandingPage_mobile.PNG "mobile first landing page")
+Mobile first landing page
 
-### `npm start`
+![Alt text](/src/components/img/about_mobile.PNG "mobile first about page")
+Mobile first about page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Alt text](/src/components/img/MapData_mobile.PNG "mobile first map data page")
+Mobile first map data page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Alt text](/src/components/img/contact_mobile.PNG "mobile first contact form page")
+Mobile first contact form page
 
-### `npm test`
+## Desktop
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Alt text](/src/components/img/LandingPage_desktop.PNG "desktop landing page")
+Desktop landing page
 
-### `npm run build`
+![Alt text](/src/components/img/about_desktop.PNG "Desktop about page")
+Desktop first about page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Alt text](/src/components/img/MapData_desktop.PNG"Desktop map data page")
+Desktop first map data page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Alt text](/src/components/img/contact_desktop.PNG "Desktop contact form page")
+Desktop first contact form page

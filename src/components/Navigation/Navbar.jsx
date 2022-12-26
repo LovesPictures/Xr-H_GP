@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="Primary__navbar">
       <ul>
         <li className="Primary__navbar-link">
-          <Link to="/home">
+          <Link to="/">
             <HomeIcon alt="Home" />
           </Link>
 

@@ -19,7 +19,7 @@ function App() {
       <Routes>
         {/* index is parent and content for the index using outlet to render the results */}
         {/* <Route index element={<Home />} /> */}
-        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/mapData" element={<MapData />} />
         <Route exact path="/ar" element={<Ar />} />
