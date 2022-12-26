@@ -1,28 +1,152 @@
-import React from "react";
-// import { Typography } from "@material-ui/core";
+import React, { useState } from "react";
+import axios from "axios";
+
 import "./Contact.css";
 
-export const Contact = (props) => {
-  return (
-    <section className="Page__section">
-      <h2 className="Page-header">Contact</h2>
-    </section>
+export const Contact = () => {
+  // variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [userTelephone, setUserTelephone] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userTextArea, setUserTextarea] = useState("");
 
-    // <div>
-    //   <Typography variant="h3">Contact Page</Typography>
-    //   <Typography variant="body2">
-    //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique
-    //     lacus tortor, sit amet viverra ligula elementum vel. Suspendisse eu ante
-    //     mauris. Maecenas et blandit ex. Suspendisse feugiat nisi lorem, vel
-    //     finibus mauris gravida et. Nulla viverra sit amet libero vitae rhoncus.
-    //     Donec ornare fermentum velit. Ut eget vehicula nibh. Duis ex arcu,
-    //     ullamcorper vitae leo eget, tristique egestas nulla. Fusce gravida sem
-    //     eget ipsum sollicitudin, at euismod augue placerat. Integer interdum
-    //     lectus vel nisi porttitor, vitae egestas lorem luctus. Vivamus ac est
-    //     ultricies, ullamcorper nunc a, vehicula lectus. Donec efficitur aliquam
-    //     viverra. Integer accumsan placerat metus, vel cursus libero tristique
-    //     vel.
-    //   </Typography>
-    // </div>
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    alert(
+      " Thank you for the info " +
+        firstName +
+        ", we will reply to you within the hour"
+    );
+
+    //call the helper function which connects to the new contact entry
+    createNewContactEntry(
+      firstName,
+      lastName,
+      userTelephone,
+      userEmail,
+      userTextArea
+    );
+  };
+
+  return (
+    <div id="Contact">
+      <h2 className="main__contact-header">Contact</h2>
+      <div className="main__body-contact">
+        <div className="Contact__Form-body" name="Contact">
+          <fieldset>
+            <form onSubmit={handleFormSubmit} id="Contact__form">
+              <label id="Contact__form-firstName" for="First name">
+                {/* First Name */}
+              </label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                // controlled input onChange - circular store the input value in state when user types a letter each letter is saved , then you feed it back to input
+                value={firstName}
+                onChange={(event) => setFirstName(event.target.value)}
+                className="form-control"
+                placeholder="First name"
+                required
+              />
+
+              <label id="Contact__form-LastName" for="Last Name">
+                {/* Last Name */}
+              </label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                // controlled input onChange - circular store the input value in state when user types a letter each letter is saved , then you feed it back to input
+                value={lastName}
+                //  To do  first lett to upper case
+                onChange={(event) => setLastName(event.target.value)}
+                //(event.target.value.charAt(0).toUpperCase())}
+                // str.charAt(0).toUpperCase() + str.slice(1);
+                className="form-control"
+                placeholder="Last name"
+                required
+              />
+
+              <div id="Contact__form-email">
+                <label id="Contact__form-label" for="email">
+                  {/* Email */}
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={userEmail}
+                  onChange={(event) => setUserEmail(event.target.value)}
+                  className="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div id="Contact__form-tel">
+                <label id="Contact__form-tel" for="telephone">
+                  {/* Telephone */}
+                </label>
+                <input
+                  type="number"
+                  name="telephone"
+                  id="telephone"
+                  value={userTelephone}
+                  onChange={(event) => setUserTelephone(event.target.value)}
+                  className="form-control"
+                  placeholder="Telephone"
+                />
+              </div>
+
+              {/* update with label and associate it */}
+              <textarea
+                type="textArea"
+                id="comments"
+                value={userTextArea}
+                onChange={(event) => setUserTextarea(event.target.value)}
+                className="input-textarea"
+                name="comment"
+                placeholder="Your comments here..."
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                id="Contact__form-submit-Btn"
+                className="submit-button"
+              >
+                Submit
+              </button>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   );
+};
+
+//Helper function to connect to the user contact input in its own function
+const createNewContactEntry = (
+  firstName,
+  lastName,
+  userTelephone,
+  userEmail,
+  userTextArea
+) => {
+  axios.post("/", {
+    records: [
+      {
+        fields: {
+          FirstName: firstName,
+          LastName: lastName,
+          Email: userEmail,
+          Phone: userTelephone,
+          Message: userTextArea,
+        },
+      },
+    ],
+  });
 };

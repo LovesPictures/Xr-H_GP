@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 *,
 *::before,
@@ -27,9 +27,9 @@
   --font-family-1: "Share Tech Mono", monospace;
 
   /* scale these form mobile to desktop */
-  --font-size-1: 2rem; /*55px*/
-  --font-size-2: 2.13rem; /*34px*/
-  --font-size-3: 1.25rem; /*22px*/
+  --font-size-1: 1.8rem; /*55px*/
+  --font-size-2: 1.3rem; /*34px*/
+  --font-size-3: 1.2rem; /*22px*/
   --font-size-4: 1rem; /* 16 px = 1 rem */
   --font-size-5: 0.8rem; /*12px*/
 
@@ -61,7 +61,8 @@
 }
 
 body {
- font-family: var(--font-family-1 );
+ font-family: "Share Tech Mono", monospace;
+ /* background: var(--background-4); */
  height: 100vh;
 }
 
@@ -92,14 +93,14 @@ select {
   margin: 0 auto;
 }
 
-.Grid__container-b {
-  /* ex-Large  */
+/* .Grid__container-b {
+  ex-Large 
   display: grid;
   grid-gap: 5px;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  /* border: 5px solid pink; */
-}
+  /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+  /* border: 5px solid pink; 
+} */
 
 /* Small */
 @media (max-width: 600px) {

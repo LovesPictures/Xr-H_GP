@@ -5,7 +5,7 @@ import "./App.css";
 // Page/ navigation Routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navigation/Navbar";
-// import { Home } from "./components/Pages/Home";
+import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { MapData } from "./components/Pages/MapData";
 import { Ar } from "./components/Pages/Ar";
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         {/* index is parent and content for the index using outlet to render the results */}
         {/* <Route index element={<Home />} /> */}
-        {/* <Route exact path="/" element={<Home />} /> */}
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/mapData" element={<MapData />} />
         <Route exact path="/ar" element={<Ar />} />

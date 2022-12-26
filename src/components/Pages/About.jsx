@@ -5,8 +5,8 @@ import "./About.css";
 
 export const About = () => {
   return (
-    <main className="about__body">
-      <header className="main__header">
+    <main className="main__body-about">
+      <header className="main__about-header">
         <h2>About</h2>
       </header>
       <div className="accordion">
@@ -17,5 +17,3 @@ export const About = () => {
     </main>
   );
 };
-
-// export default About;

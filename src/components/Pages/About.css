@@ -1,25 +1,24 @@
-
-.about__body {
-  background-color: var(--background-4);
+.main__body-about {
+  background: var(--background-4);
   height: 100vh;
-  /* position: relative; */
+  position: absolute;
+  width:100vw;
 }
 
-.main__header {
+.main__about-header{
   font-size: var(--font-size-1);
   color: var(--font-semiTransparent);
-  position: relative;
-  margin: 10rem auto;
+  position: absolute;
+  margin: 11rem 3rem;
   /* top: 10rem auto; */
-   text-align: center;
-  
+   /* text-align: center;   */
+   z-index: 10;   
 }
 
 .accordion {
-   position: relative;
+  position: relative;
   max-width: 450rem;
-  margin: 5rem 3rem ;
-  box-shadow: var(--box-shadow-2);
+  margin: 14rem 3rem;
   border: 1px solid var(--background-3);
   box-shadow: var(--box-shadow-1);
  
@@ -32,7 +31,7 @@
   cursor: crosshair;
   background-color: var(--accent-1);
   border: 1px solid var(--background-3);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
   font-weight: var(--font-weight-3);
 }
 
@@ -44,20 +43,7 @@
 
 .accordion__title,
 .accordion__content {
-  padding: 1.5rem;
+  padding: 1.2rem;
   color: var(--font-color-2);
 }
-
-/* .accordion__content {
-  background-color: var(--background-6);
-  font-size: 18px;
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    font-size: 18px;
-  }
-  .accordion {
-    width: 90%;
-  }
-} */
+ 

@@ -2,6 +2,17 @@
   height: 100vh;
 }
 
+.main__mapData-header{
+  font-size: var(--font-size-1);
+  color: var(--font-semiTransparent);
+  position: absolute;
+  margin: 34rem auto;
+
+   z-index: 10;   
+}
+
+
+
 /* DEFAULT text container   */
 .Card__text-container-c {
   color: white;
