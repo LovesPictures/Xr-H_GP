@@ -24,7 +24,7 @@ export const MapData = () => {
         initialViewState={{
           longitude: -0.16038,
           latitude: 50.898625,
-          zoom: 9,
+          zoom: 8.5,
           pitch: 45,
           bearing: -10, // bearing in degrees
         }}

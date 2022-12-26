@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import { LandingPageCard } from "./LandingPageCard";
+import { HomePageCard } from "./HomePageCard";
 
 import "./Home.css";
 
 export const Home = () => {
   return (
     <div className="cardP">
-      <LandingPageCard
+      <HomePageCard
         ProjectName=<h1>Xr-H</h1>
         Developer="© Jude Ricketts"
         SubTitle="Futuring the city's past"

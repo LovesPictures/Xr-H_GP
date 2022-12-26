@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import { AccordionData } from "./AccordionData";
+
 import "./About.css";
 
 export const About = () => {

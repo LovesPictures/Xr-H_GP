@@ -3,7 +3,7 @@ import Logo from "../img/JohnHawkynsCrest_02.png";
 
 import QR from "../img/QR.png";
 
-export const LandingPageCard = (props) => {
+export const HomePageCard = (props) => {
   return (
     <div>
       <div className="Card__text-container">

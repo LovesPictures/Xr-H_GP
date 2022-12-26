@@ -1,39 +1,33 @@
-
 .cardP {
   background-color: var(--background-2);
   height: 100vh;
   color: var(--font-color-2);
-  /* text-align: center; */
-  
+  text-align: center;
 }
 
 .Card__logo {
   display: relative;
-  /* text-align: center; */
-  margin-left:0.2rem;
+  text-align: center;
 }
 
 .Card__logo > img {
   display: relative;
   margin-top: 4rem;
   height: 100px;
-  margin-left:3rem;
 }
 
-.Card__text-projectName {  
+.Card__text-projectName {
   font-size: var(--font-size-1);
   color: var(--font-semiTransparent);
   font-weight: var(--font-weight-1);
   display: relative;
   margin-top: 0rem;
-  margin-left: 3rem;
 }
 
 .Card__text-city {
   margin-top: 1rem;
   font-size: var(--font-size-3);
   display: block;
-  margin-left:3rem;
 }
 
 .Card__text-projectYear {
@@ -42,7 +36,6 @@
   margin: 1.5rem;
   position: relative;
   display: block;
-  margin-left:3rem;
 }
 
 /* .Card__text-Socials {
@@ -58,13 +51,10 @@
   position: relative;
   margin-top: 1.5rem;
   display: block;
-  margin-left:3rem;
 }
 
 .Card__QR {
   display: relative;
-  /* text-align: center; */
-  margin-left:3rem;
 }
 
 .Card__QR > img {
@@ -73,5 +63,29 @@
   height: 7rem;
   filter: invert(100);
 }
- 
-/* Media query large screen */
+
+/* MEDIA  -------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+  .Card__logo > img {
+    margin-top: 8rem;
+    height: 200px;
+  }
+  .Card__text-projectName {
+    font-size: 2.5rem;
+  }
+
+  .Card__text-city,
+  .Card__text-projectYear {
+    font-size: 1.7rem;
+  }
+
+  .Card__text-developer {
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+  }
+
+  .Card__QR > img {
+    height: 10rem;
+  }
+}

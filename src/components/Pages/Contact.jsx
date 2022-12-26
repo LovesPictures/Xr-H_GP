@@ -32,14 +32,15 @@ export const Contact = () => {
 
   return (
     <div id="Contact">
-      <h2 className="main__contact-header">Contact</h2>
       <div className="main__body-contact">
+        <header className="main__contact-header">
+          <h2>Contact</h2>
+        </header>
+
         <div className="Contact__Form-body" name="Contact">
           <fieldset>
             <form onSubmit={handleFormSubmit} id="Contact__form">
-              <label id="Contact__form-firstName" for="First name">
-                {/* First Name */}
-              </label>
+              <label id="Contact__form-firstName" for="First name"></label>
               <input
                 type="text"
                 name="firstName"
@@ -52,16 +53,13 @@ export const Contact = () => {
                 required
               />
 
-              <label id="Contact__form-LastName" for="Last Name">
-                {/* Last Name */}
-              </label>
+              <label id="Contact__form-LastName" for="Last Name"></label>
               <input
                 type="text"
                 name="lastName"
                 id="lastName"
                 // controlled input onChange - circular store the input value in state when user types a letter each letter is saved , then you feed it back to input
                 value={lastName}
-                //  To do  first lett to upper case
                 onChange={(event) => setLastName(event.target.value)}
                 //(event.target.value.charAt(0).toUpperCase())}
                 // str.charAt(0).toUpperCase() + str.slice(1);
@@ -71,9 +69,7 @@ export const Contact = () => {
               />
 
               <div id="Contact__form-email">
-                <label id="Contact__form-label" for="email">
-                  {/* Email */}
-                </label>
+                <label id="Contact__form-label" for="email"></label>
                 <input
                   type="email"
                   name="email"
@@ -87,9 +83,7 @@ export const Contact = () => {
               </div>
 
               <div id="Contact__form-tel">
-                <label id="Contact__form-tel" for="telephone">
-                  {/* Telephone */}
-                </label>
+                <label id="Contact__form-tel" for="telephone"></label>
                 <input
                   type="number"
                   name="telephone"
@@ -101,7 +95,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* update with label and associate it */}
               <textarea
                 type="textArea"
                 id="comments"
