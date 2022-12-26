@@ -12,7 +12,7 @@ export const Home = () => {
         Developer="© Jude Ricketts"
         SubTitle="Futuring the city's past"
         City="Greater Brighton"
-        ProjectYear="1652 - 2023"
+        ProjectYear="1562 - 2023"
         // Socials="@xx"
       />
     </div>

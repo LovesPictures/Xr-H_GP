@@ -18,7 +18,7 @@ export const MapData = () => {
   return (
     <main className="cardQ">
       <header className="main__mapData-header">
-        <h2>Greater Brighton</h2>
+        {/* <h2>Greater Brighton</h2> */}
       </header>
       <Map
         initialViewState={{
