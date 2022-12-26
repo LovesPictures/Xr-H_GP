@@ -1,0 +1,39 @@
+.accordion {
+  max-width: 500px;
+  margin: 10rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: crosshair;
+  background-color: #21aeca;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.accordion-title:hover {
+  background-color: pink;
+  color: #21aeca;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1.5rem;
+  color: white;
+}
+
+.accordion-content {
+  background-color: #39b9d2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .accordion {
+    width: 90%;
+  }
+}
