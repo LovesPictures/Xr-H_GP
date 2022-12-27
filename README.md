@@ -18,6 +18,9 @@ Mobile first landing page
 ![Alt text](/src/components/img/about_mobile.PNG "mobile first about page")
 Mobile first about page
 
+![Alt text](/src/components/img/about_mobile_accordion.PNG "mobile first about page")
+Mobile first about page - information accordion
+
 ![Alt text](/src/components/img/MapData_mobile.PNG "mobile first map data page")
 Mobile first map data page
 

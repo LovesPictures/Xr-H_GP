@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div className="cardP">
       <HomePageCard
-        ProjectName=<h1>Xr-H</h1>
+        ProjectName=<h1>Xr-H_GP</h1>
         Developer="© Jude Ricketts"
         SubTitle="Futuring the city's past"
         City="Greater Brighton"
