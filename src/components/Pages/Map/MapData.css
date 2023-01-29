@@ -1,0 +1,115 @@
+.main__body-mapData {
+  background: var(--background-4);
+  height: 100vh;
+}
+
+.main__mapData-header {
+  font-size: var(--font-size-2);
+  position: relative;
+  color: var(--font-color-2);
+  background: var(--background-6);
+  background-color: var(--background-3);
+  padding: 0.8rem 3rem 0.8rem 0.5rem;
+}
+
+.find__your-location {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-3);
+  position: absolute;
+  color: var(--font-color-2);
+  background: none;
+  padding: 1rem 0rem;
+  right: 3rem;
+  z-index: 100;
+}
+
+/* Mapbox branding */
+.mapboxgl-ctrl-logo {
+  width: 0px;
+  height: 0px;
+}
+
+a.mapboxgl-ctrl-logo {
+  width: 0px;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  width: 0px;
+  height: 0px;
+}
+
+.mapboxgl-ctrl-attrib-button {
+  width: 0px;
+  height: 0px;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  background-color: 0;
+  width: 0px;
+  height: 0px;
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  background-color: 0;
+  border-radius: 0px;
+  margin: 0px;
+  min-height: 0px;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.MarkerText {
+  color: #fff;
+  display: none;
+}
+
+/* Pop-up-------------------------------------------- */
+
+.mapboxgl-popup-content {
+  width: 18rem;
+  font-size: var(--font-size-4);
+  position: relative;
+  color: var(--font-color-2);
+  background: var(--accent-8);
+  cursor: crosshair;
+  padding: 0.5rem 1.5rem;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  align-self: center;
+  border-bottom: none;
+  border-top-color: var(--accent-8);
+  
+}
+
+.mapboxgl-popup-tip {
+  
+  border: 20px solid transparent;
+  height: 0;
+  width: 0;
+  z-index: 1;
+}
+
+/* Button ------------------------- */
+.mapboxgl-popup-close-button {
+  font-size: var(--font-size-2);
+  background-color: var(--accent-2);
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+.mapboxgl-popup-close-button:hover {
+  transition: 0.8s;
+  background-color: var(--accent-5);
+}
+
+.mapboxgl-popup-close-button:focus {
+  outline: none;
+}

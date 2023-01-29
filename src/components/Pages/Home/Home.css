@@ -1,0 +1,113 @@
+.cardP {
+  background-color: var(--background-2);
+  min-height: 100vh;
+  color: var(--font-color-2);
+  text-align: center;
+}
+
+.Card__logo {
+  display: relative;
+  text-align: center;
+}
+
+.Card__logo > img {
+  display: relative;
+  margin-top: 8rem;
+  height: 10rem;
+  filter: drop-shadow(0.1rem 0.2rem 0.3rem var(--accent-6));
+}
+
+.Card__text-projectName {
+  font-size: var(--font-size-1);
+  color: var(--font-semiTransparent);
+  font-weight: var(--font-weight-1);
+  display: relative;
+  margin-top: 0rem;
+}
+
+.Card__text-city {
+  margin-top: 1rem;
+  font-size: var(--font-size-3);
+  display: block;
+}
+
+.Card__text-projectYear {
+  font-size: var(--font-size-4);
+  /* color: var(--font-semiTransparent); */
+  margin: 1.5rem;
+  position: relative;
+  display: block;
+}
+
+/* .Card__text-Socials {
+  font: 1.2rem var(--font-family-1);
+  position: relative;
+  display: block;
+  margin-top: 20px;
+} */
+
+.Card__text-developer {
+  font: var(--font-family-1);
+  font-size: var(--font-size-4);
+  position: relative;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.Card__QR {
+  display: relative;
+}
+
+.Card__QR > img {
+  display: relative;
+  margin-top: 1rem;
+  height: 7rem;
+  filter: invert(100);
+}
+
+/* MEDIA  -------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+ 
+.Card__logo > img {
+  display: relative;
+  margin-top: 6rem;
+  height: 10rem;
+  filter: drop-shadow(0.1rem 0.2rem 0.3rem var(--accent-6));
+}
+
+.Card__text-projectName {
+  font-size: var(--font-size-1) 
+}
+
+.Card__text-city {
+  margin-top: 1rem;
+  font-size: var(--font-size-3);
+  display: block;
+}
+
+.Card__text-projectYear {
+  font-size: var(--font-size-4);
+  /* color: var(--font-semiTransparent); */
+  margin: 1.5rem;
+  position: relative;
+  display: block;
+}
+
+.Card__text-developer {
+  font: var(--font-family-1);
+  font-size: var(--font-size-4);
+  position: relative;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.Card__QR {
+  display: relative;
+}
+
+.Card__QR > img {
+  margin-top: 1rem;
+  height: 7rem-0.5rem;
+}
+}

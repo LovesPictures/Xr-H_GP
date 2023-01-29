@@ -7,31 +7,31 @@
   margin: 0;
   padding: 0;  
 }
-
+ 
 :root {
   --background-1: #ffff;
   --background-2: #f509ae;
   --background-3: #e8e517cc;
-  --background-4:  #424d5c;
+  --background-4: #424d5c;
   --background-5: #5d757e;
   --background-6: url(./components/img/grid.png);
 
   --accent-1: #8d8b0dcc;
-  --accent-2: #68656899;
+  --accent-2: #e8e517cc;
   --accent-3: #00ff00;
   --accent-4: #545455;
   --accent-5: #ffff;
-  --accent-6: #000;
+  --accent-6: rgba(255, 255, 255, 0.74);
+  --accent-7: #f509ae;
+  --accent-8: #3fb1ce;
+  
 
-  /* font */
-  --font-family-1: "Share Tech Mono", monospace;
-
-  /* scale these form mobile to desktop */
-  --font-size-1: 1.8rem; /*55px*/
-  --font-size-2: 1.3rem; /*34px*/
-  --font-size-3: 1.2rem; /*22px*/
+  /* scale from mobile to desktop base 16 */
+  --font-size-1: 1.8rem; /*28.8px*/
+  --font-size-2: 1.3rem; /* 20.8px*/
+  --font-size-3: 1.2rem; /*19.2px*/
   --font-size-4: 1rem; /* 16 px = 1 rem */
-  --font-size-5: 0.8rem; /*12px*/
+  --font-size-5: 0.8rem; /*12.8px*/
 
   --font-weight-1: 700;
   --font-weight-2: 600;
@@ -41,8 +41,8 @@
   --font-color-2: #ffff;
   --font-color-3: #000;
   --font-color-4: #d7d7db;
-  --font-color-5: #ffa500;
-  --font-semiTransparent: rgba(255, 255, 255, 0.502);
+  --font-color-5: #00ff00;
+  --font-semiTransparent: #ffffff80;
 
   /* styling */
   --box-shadow-1: 6px 6px 6px 0px var(--accent-1);
@@ -56,63 +56,14 @@
   --border-style-1: 1px solid #d3d3d3;
   --border-radius-1: 20px;
 
-  /* to do - set to 10px */
   --border-radius-2: 3px;
 }
 
 body {
  font-family: "Share Tech Mono", monospace;
- /* background: var(--background-4); */
- height: 100vh;
 }
 
 html {
   color-scheme: dark light;
 }
-
-input,
-textarea,
-button,
-select {
-  font: inherit;
-}
-
-/* pages--------------------------------------- */
-.Page__section {
-  font: 2rem;
-}
-
-.Page-header {
-  color: var(--font-color-3);
-}
-/* end pages--------------------------------------- */
-
-.Card__b {
-  height: 300px;
-  width: 16rem;
-  margin: 0 auto;
-}
-
-/* .Grid__container-b {
-  ex-Large 
-  display: grid;
-  grid-gap: 5px;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-  /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
-  /* border: 5px solid pink; 
-} */
-
-/* Small */
-@media (max-width: 600px) {
-  .Card {
-    height: 180px;
-    width: 100%;
-  }
-
-  .Card__img {
-    height: 16rem;
-    position: relative;
-    /* left: 300px; */
-    bottom: 0px;
-  }
-}
+ 

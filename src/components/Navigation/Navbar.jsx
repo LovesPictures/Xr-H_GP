@@ -1,18 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import HomeIcon from "@material-ui/icons/Home";
-import PersonIcon from "@material-ui/icons/Person";
-import MapIcon from "@material-ui/icons/Map";
-// import BubbleChartIcon from "@material-ui/icons/BubbleChart";
-// import CollectionsBookmark from "@material-ui/icons/CollectionsBookmark";
-import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
-
 // import icons from icons
-// import Icons from "../img/Icons";
+import Icons from "../img/Icons";
 
 import "./Navbar.css";
-// import { Icon } from "@material-ui/core";
 
 const Navbar = () => {
   return (
@@ -20,27 +12,39 @@ const Navbar = () => {
       <ul>
         <li className="Primary__navbar-link">
           <Link to="/">
-            <HomeIcon alt="Home" />
+            <img className="Nav__icon" src={Icons.iconHome} alt="Home icon" />
           </Link>
 
           <Link to="/about">
-            <PersonIcon alt="About" />
+            <img
+              className="Nav__icon"
+              src={Icons.iconPerson}
+              alt="Person icon"
+            />
           </Link>
 
           <Link to="/mapData">
-            <MapIcon alt="Map data" />
+            <img className="Nav__icon" src={Icons.iconMap} alt="Map icon" />
           </Link>
 
-          {/* <Link to="/posters">
-            <BubbleChartIcon alt="Digital Posters" />
+          {/* <Link to="/locations">
+            <img className="Nav__icon" src={Icons.iconEye} alt="Eye icon" />
           </Link> */}
 
-          {/* <Link to="/Gallery">
-            <CollectionsBookmark alt="Collections" />
-          </Link> */}
+          <Link to="/Gallery">
+            <img
+              className="Nav__icon"
+              src={Icons.iconCircles}
+              alt="circles icon"
+            />
+          </Link>
 
           <Link to="/contact">
-            <AlternateEmailIcon />
+            <img
+              className="Nav__icon"
+              src={Icons.iconEmail}
+              alt="Gallery icon"
+            />
           </Link>
         </li>
       </ul>

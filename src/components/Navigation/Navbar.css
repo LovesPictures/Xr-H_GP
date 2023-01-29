@@ -1,14 +1,9 @@
 
-/* .Primary__navbar { 
-  padding: 0px;
-  text-align: center;
-} */
-
 .Primary__navbar-link {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background: var(--background-6);
 }
 
@@ -20,13 +15,15 @@
   padding: 14px 6.5%;
   text-decoration: none;
   font-size: 17px;
-  /* for 6 icons */
-  /* width: 16.6%; */
   /* for 5 icons */
-  /* width: 20%; */
-   /* for 4 icons */
-  width: 25%;
+  width: 20%;
   transition: all 0.8s;
+}
+
+.Nav__icon {
+  width: 20px;
+  padding: 0px;
+  z-index: 100;
 }
 
 .Primary__navbar-link a:hover {
@@ -36,8 +33,6 @@
 }
 
 .Primary__navbar-link a.active {
-  /* background-color: #04aa6d; */
-  bottom: 1rem solid pink;
   background: var(--background-1);
 }
 
@@ -45,7 +40,7 @@
   display: none;
 }
 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   .Primary__navbar-link a:not(:first-child) {
     display: none;
   }
@@ -66,5 +61,7 @@
     display: block;
     text-align: left;
   }
-}
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_bottom_nav */
+} */
+ 
+
+

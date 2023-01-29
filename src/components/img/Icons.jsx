@@ -1,11 +1,10 @@
-// import React from 'react'
-
 const Icons = {
   iconHome: require("./home.svg").default,
-  iconPerson: require("./Person.svg").default,
-  iconMap: require("./Map.svg").default,
-  iconBubble: require("./circles.svg").default,
-  iconEmail: require("./Email.svg").default,
+  iconPerson: require("./person.svg").default,
+  iconMap: require("./map.svg").default,
+
+  iconCircles: require("./circles.svg").default,
+  iconEmail: require("./atSign.svg").default,
 };
 
 export default Icons;

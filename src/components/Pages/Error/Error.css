@@ -1,0 +1,35 @@
+.main__body-error {
+  background: var(--background-4);
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.main__error-header {
+  font-size: var(--font-size-1);
+  color: var(--font-semiTransparent);
+  text-align: center;
+  display: block;
+}
+
+.main__header-text{
+margin: 2rem 0rem 0rem 0rem;
+}
+
+.main__body-text {
+  margin: 4rem 0rem 4rem 0rem;
+}
+
+.main__error-link {
+  font-size: var(--font-size-1);
+  color: var(--font-color-5);
+  text-decoration-style: dotted;  
+}
+
+.card__logo-error > img {
+  margin-top: 10rem;
+  height: 8rem;
+  filter: drop-shadow(0.05rem 0.1rem 0.2rem var(--accent-6));
+  filter: grayscale(100%);
+  text-align: center;
+}
