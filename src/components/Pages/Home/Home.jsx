@@ -8,12 +8,11 @@ export const Home = () => {
   return (
     <div className="cardP">
       <HomePageCard
-        ProjectName=<h1>Xr-H</h1>
+        ProjectName=<h1>Xr-H_cyf</h1>
         Developer="© Jude Ricketts"
         SubTitle="Futuring the city's past"
         City="Greater Brighton"
         ProjectYear="1562 - 2023"
-        // Socials="@xx"
       />
     </div>
   );

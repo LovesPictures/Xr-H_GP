@@ -41,10 +41,6 @@
 <strong> Map page </strong> mobile-first and desktop  
 <br/>
 
-![Alt text](/src/components/img/locationGallery.PNG "mobile first and desktop contact form page")
-<strong> Location Gallery </strong> mobile-first and desktop  
-<br/>
-
 ![Alt text](/src/components/img/participantGallery.PNG "mobile first and desktop contact form page")
 <strong> Participant Gallery </strong> mobile-first and desktop  
 <br/>
@@ -75,7 +71,7 @@
 
 -	An easily usable, visually appealing app which visualises archival data.
 -	A scalable mobile-first tool for touring the City 
-- Carrying out initial desk research of the City
+- Potential Use carrying out initial desk research of the City
 - Facilitation workshops
 
 </details>
